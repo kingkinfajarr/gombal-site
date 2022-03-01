@@ -34,16 +34,13 @@ const Index = ({ gombal }) => {
         </div>
 
         <div className="w-full px-8 py-4 mx-auto rounded-lg shadow-md md:mt-20 mt-14 bg-green-btn">
-          <div className="mt-2" key={gombal[gombals].id}>
+          <div className="mt-2">
             <p className="md:text-2xl text-xl font-medium md:pb-5 pb-3">
               {gombal[gombals].gombal}
             </p>
           </div>
 
-          <div
-            className="flex items-center justify-between"
-            key={gombal[gombals].id}
-          >
+          <div className="flex items-center justify-between">
             <button
               className="px-3 py-3 mb-2 bg-green-bg text-sm font-semibold rounded cursor-pointer md:w-11 w-11"
               onClick={() =>
