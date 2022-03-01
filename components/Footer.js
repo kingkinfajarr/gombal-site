@@ -1,30 +1,28 @@
-import Link from 'next/link';
-
 const Footer = () => {
   return (
     <div className="relative">
       <div className="text-center fixed bottom-0 left-0 right-0 mb-8 font-semibold">
         <p>
           Created by{' '}
-          <Link
+          <a
             href="https://github.com/kingkinfajarr"
             className="text-green-btn underline"
           >
             Kingkin Fajar
-          </Link>
+          </a>
         </p>
         <p>
           with{' '}
-          <Link href="https://nextjs.org" className="text-green-btn underline">
+          <a href="https://nextjs.org" className="text-green-btn underline">
             Next JS
-          </Link>{' '}
+          </a>{' '}
           and{' '}
-          <Link
+          <a
             href="https://tailwindcss.com"
             className="text-green-btn underline"
           >
             Tailwind CSS
-          </Link>{' '}
+          </a>{' '}
         </p>
       </div>
     </div>
