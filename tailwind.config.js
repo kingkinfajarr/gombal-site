@@ -3,6 +3,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {},
     fontFamily: {
@@ -12,6 +13,7 @@ module.exports = {
       // 'green-fav': '#7EB480',
       'green-btn': '#98D299',
       'green-bg': '#CBFFCC',
+      dark: '#262626',
       white: '#fff',
     },
   },

@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <div className="relative">
       <div className="text-center fixed bottom-0 left-0 right-0 mb-8 font-semibold">
-        <p>
+        <p className="dark:text-white">
           Created by{' '}
           <a
             href="https://github.com/kingkinfajarr"
@@ -11,7 +11,7 @@ const Footer = () => {
             Kingkin Fajar
           </a>
         </p>
-        <p>
+        <p className="dark:text-white">
           with{' '}
           <a href="https://nextjs.org" className="text-green-btn underline">
             Next JS

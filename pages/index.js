@@ -25,17 +25,19 @@ const Index = ({ gombal }) => {
   return (
     <>
       <title>Gombal Site | Kingkin Fajar</title>
-      <div className="mx-auto md:px-72 px-8">
+      <div className="mx-auto md:px-72 px-8 dark:bg-dark transition-all duration-300 min-h-screen">
         <Header />
         <div className="text-center mt-10">
-          <h1 className="font-medium">
+          <h1 className="font-medium dark:text-white">
             Temukan Gombalan maut buat{' '}
-            <span className="underline text-green-btn">ayang</span>, biar makin
-            jatuh cinta😘
+            <span className="underline text-green-bg dark:text-green-btn">
+              ayang
+            </span>
+            , biar makin jatuh cinta😘
           </h1>
         </div>
 
-        <div className="w-full px-8 py-4 mx-auto rounded-lg shadow-md md:mt-20 mt-14 bg-green-btn">
+        <div className="w-full px-8 py-4 mx-auto rounded-lg shadow-md md:mt-20 mt-14 bg-green-bg dark:bg-green-btn">
           <div className="mt-2">
             <p className="md:text-2xl text-xl font-medium md:pb-5 pb-3">
               {gombal[gombals].gombal}
@@ -44,7 +46,7 @@ const Index = ({ gombal }) => {
 
           <div className="flex items-center justify-between">
             <button
-              className="px-3 py-3 mb-2 bg-green-bg text-sm font-semibold rounded cursor-pointer md:w-11 w-11"
+              className="px-3 py-3 mb-2 bg-green-btn dark:bg-green-bg text-sm font-semibold rounded cursor-pointer md:w-11 w-11"
               onClick={() =>
                 navigator.clipboard.writeText(gombal[gombals].gombal)
               }
@@ -58,7 +60,7 @@ const Index = ({ gombal }) => {
               </svg>
             </button>
             <button
-              className="px-3 py-3 mb-2 bg-green-bg text-sm font-semibold rounded cursor-pointer ml-auto md:w-52 w-40"
+              className="px-3 py-3 mb-2 bg-green-btn dark:bg-green-bg text-sm font-semibold rounded cursor-pointer ml-auto md:w-52 w-40"
               onClick={generateRandomGombal}
             >
               Gombalan Lainnya
