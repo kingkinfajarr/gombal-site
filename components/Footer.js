@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className="relative">
-      <div className="text-center fixed bottom-0 left-0 right-0 mb-8 font-semibold">
+      <div className="text-center fixed bottom-0 left-0 right-0 md:mb-8 mb-20 font-semibold">
         <p className="dark:text-white">
           Created by{' '}
           <a
