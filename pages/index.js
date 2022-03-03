@@ -13,8 +13,9 @@ export const getStaticProps = async () => {
 };
 
 const Index = ({ gombal }) => {
-  const [gombals, setGombal] = useState(0);
-  console.log(gombals);
+  const [gombals, setGombal] = useState(
+    Math.floor(Math.random() * gombal.length)
+  );
 
   const generateRandomGombal = () => {
     const gombals = Math.floor(Math.random() * gombal.length);
