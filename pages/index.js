@@ -24,6 +24,7 @@ const Index = ({ gombal }) => {
 
   return (
     <>
+      <title>Gombal Site | Kingkin Fajar</title>
       <div className="mx-auto md:px-72 px-8">
         <Header />
         <div className="text-center mt-10">
